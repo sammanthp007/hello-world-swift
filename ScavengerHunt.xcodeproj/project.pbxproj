@@ -8,12 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		1896A88F1C8B27F400DEF049 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1896A88E1C8B27F400DEF049 /* AppDelegate.swift */; };
-		1896A8911C8B27F400DEF049 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1896A8901C8B27F400DEF049 /* ViewController.swift */; };
+		1896A8911C8B27F400DEF049 /* AddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1896A8901C8B27F400DEF049 /* AddViewController.swift */; };
 		1896A8941C8B27F400DEF049 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1896A8921C8B27F400DEF049 /* Main.storyboard */; };
 		1896A8961C8B27F400DEF049 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1896A8951C8B27F400DEF049 /* Assets.xcassets */; };
 		1896A8991C8B27F400DEF049 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1896A8971C8B27F400DEF049 /* LaunchScreen.storyboard */; };
 		1896A8A41C8B27F400DEF049 /* ScavengerHuntTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1896A8A31C8B27F400DEF049 /* ScavengerHuntTests.swift */; };
 		1896A8AF1C8B27F400DEF049 /* ScavengerHuntUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1896A8AE1C8B27F400DEF049 /* ScavengerHuntUITests.swift */; };
+		1896A8BD1C8B383D00DEF049 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1896A8BC1C8B383D00DEF049 /* ListViewController.swift */; };
+		18E42FA31C8B5DB200036A0D /* ScavengerHuntItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E42FA21C8B5DB200036A0D /* ScavengerHuntItem.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +38,7 @@
 /* Begin PBXFileReference section */
 		1896A88B1C8B27F400DEF049 /* ScavengerHunt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ScavengerHunt.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1896A88E1C8B27F400DEF049 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		1896A8901C8B27F400DEF049 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		1896A8901C8B27F400DEF049 /* AddViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddViewController.swift; sourceTree = "<group>"; };
 		1896A8931C8B27F400DEF049 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1896A8951C8B27F400DEF049 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1896A8981C8B27F400DEF049 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +49,8 @@
 		1896A8AA1C8B27F400DEF049 /* ScavengerHuntUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ScavengerHuntUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1896A8AE1C8B27F400DEF049 /* ScavengerHuntUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScavengerHuntUITests.swift; sourceTree = "<group>"; };
 		1896A8B01C8B27F400DEF049 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1896A8BC1C8B383D00DEF049 /* ListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
+		18E42FA21C8B5DB200036A0D /* ScavengerHuntItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScavengerHuntItem.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,8 +102,10 @@
 			isa = PBXGroup;
 			children = (
 				1896A88E1C8B27F400DEF049 /* AppDelegate.swift */,
-				1896A8901C8B27F400DEF049 /* ViewController.swift */,
+				1896A8901C8B27F400DEF049 /* AddViewController.swift */,
 				1896A8921C8B27F400DEF049 /* Main.storyboard */,
+				1896A8BC1C8B383D00DEF049 /* ListViewController.swift */,
+				18E42FA21C8B5DB200036A0D /* ScavengerHuntItem.swift */,
 				1896A8951C8B27F400DEF049 /* Assets.xcassets */,
 				1896A8971C8B27F400DEF049 /* LaunchScreen.storyboard */,
 				1896A89A1C8B27F400DEF049 /* Info.plist */,
@@ -256,8 +262,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1896A8911C8B27F400DEF049 /* ViewController.swift in Sources */,
+				1896A8911C8B27F400DEF049 /* AddViewController.swift in Sources */,
 				1896A88F1C8B27F400DEF049 /* AppDelegate.swift in Sources */,
+				18E42FA31C8B5DB200036A0D /* ScavengerHuntItem.swift in Sources */,
+				1896A8BD1C8B383D00DEF049 /* ListViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -484,6 +492,7 @@
 				1896A8B51C8B27F400DEF049 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1896A8B61C8B27F400DEF049 /* Build configuration list for PBXNativeTarget "ScavengerHuntTests" */ = {
 			isa = XCConfigurationList;
@@ -492,6 +501,7 @@
 				1896A8B81C8B27F400DEF049 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1896A8B91C8B27F400DEF049 /* Build configuration list for PBXNativeTarget "ScavengerHuntUITests" */ = {
 			isa = XCConfigurationList;
@@ -500,6 +510,7 @@
 				1896A8BB1C8B27F400DEF049 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

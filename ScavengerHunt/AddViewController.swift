@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  AddViewController.swift
 //  ScavengerHunt
 //
 //  Created by Apple on 3/5/16.
@@ -8,7 +8,8 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+// changed the name of the main controller
+class AddViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,5 +22,9 @@ class ViewController: UIViewController {
     }
 
 
+    // @IBAAction - this is a method i care about when i am createing my views
+    @IBAction func cancel(sender: AnyObject) {
+        dismissViewControllerAnimated(true, completion: nil)
+    }
 }
 

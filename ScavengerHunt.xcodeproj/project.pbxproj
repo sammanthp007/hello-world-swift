@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1879EE9A1C8B78A300BD8208 /* ItemManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1879EE991C8B78A300BD8208 /* ItemManager.swift */; };
 		1896A88F1C8B27F400DEF049 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1896A88E1C8B27F400DEF049 /* AppDelegate.swift */; };
 		1896A8911C8B27F400DEF049 /* AddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1896A8901C8B27F400DEF049 /* AddViewController.swift */; };
 		1896A8941C8B27F400DEF049 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1896A8921C8B27F400DEF049 /* Main.storyboard */; };
@@ -36,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1879EE991C8B78A300BD8208 /* ItemManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemManager.swift; sourceTree = "<group>"; };
 		1896A88B1C8B27F400DEF049 /* ScavengerHunt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ScavengerHunt.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1896A88E1C8B27F400DEF049 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1896A8901C8B27F400DEF049 /* AddViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddViewController.swift; sourceTree = "<group>"; };
@@ -106,6 +108,7 @@
 				1896A8921C8B27F400DEF049 /* Main.storyboard */,
 				1896A8BC1C8B383D00DEF049 /* ListViewController.swift */,
 				18E42FA21C8B5DB200036A0D /* ScavengerHuntItem.swift */,
+				1879EE991C8B78A300BD8208 /* ItemManager.swift */,
 				1896A8951C8B27F400DEF049 /* Assets.xcassets */,
 				1896A8971C8B27F400DEF049 /* LaunchScreen.storyboard */,
 				1896A89A1C8B27F400DEF049 /* Info.plist */,
@@ -263,6 +266,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1896A8911C8B27F400DEF049 /* AddViewController.swift in Sources */,
+				1879EE9A1C8B78A300BD8208 /* ItemManager.swift in Sources */,
 				1896A88F1C8B27F400DEF049 /* AppDelegate.swift in Sources */,
 				18E42FA31C8B5DB200036A0D /* ScavengerHuntItem.swift in Sources */,
 				1896A8BD1C8B383D00DEF049 /* ListViewController.swift in Sources */,

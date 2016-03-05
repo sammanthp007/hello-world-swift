@@ -13,7 +13,7 @@ import UIKit
 class ListViewController : UITableViewController {
     // make an array of items, this is my data source
     var itemsList = [
-    ScavengerHuntItem(name: "Cat"),
+        ScavengerHuntItem(name: "Cat"),
         ScavengerHuntItem(name: "Bird"),
         ScavengerHuntItem(name: "Brick")
         

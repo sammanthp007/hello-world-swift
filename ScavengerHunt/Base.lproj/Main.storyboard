@@ -26,7 +26,7 @@
                                             <rect key="frame" x="15" y="0.0" width="570" height="43"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
@@ -85,10 +85,18 @@
                                 <action selector="cancel:" destination="BYZ-38-t0r" id="Jfs-rs-XjZ"/>
                             </connections>
                         </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="dLV-iA-kvX"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="dLV-iA-kvX">
+                            <connections>
+                                <segue destination="hJA-pC-W7d" kind="unwind" identifier="DoneItem" unwindAction="unwindToList:" id="zVp-xi-YGw"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="textField" destination="OgS-YS-icf" id="c4d-9j-oOg"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <exit id="hJA-pC-W7d" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="1252" y="421"/>
         </scene>

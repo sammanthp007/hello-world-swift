@@ -39,6 +39,21 @@ class ListViewController : UITableViewController {
         return cell
 
     }
+    
+    
+    // we have set the action of our segue to be unwindToList, so this is that function
+    @IBAction func unwindToList(segue: UIStoryboardSegue) {
+        if segue.identifier == "DoneItem" {
+            // get the name of the source view from which the segue originated
+            let addVC = segue.sourceViewController as! AddViewController
+            if let newItem = addVC.newItem {
+                itemsList += [newItem]
+//                why are we doing this?
+                let indexPath = NSIndexPath(forRow: itemsList.count - 1, inSection: 0)
+                tableView.insertRowsAtIndexPaths([indexPath], withRowAnimation: .Automatic)
+            }
+        }
+    }
 }
 
 /* process runs by

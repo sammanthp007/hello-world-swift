@@ -14,10 +14,11 @@ class ListViewController : UITableViewController, UIImagePickerControllerDelegat
     // make an array of items, this is my data source
     let myManager = ItemsManager()
     
-    // for getting camera
+    // for getting pictures through either camera or camera roll
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         let imagePicker = UIImagePickerController()
         // because we are using simulater, we don't have a camera so we have this branching
+        // because only class can access class methods
         if UIImagePickerController.isSourceTypeAvailable(.Camera) {
             imagePicker.sourceType = .Camera
         } else {
@@ -25,6 +26,7 @@ class ListViewController : UITableViewController, UIImagePickerControllerDelegat
         }
         // who can answer all the delegate question: this same class
         imagePicker.delegate = self
+        // model presenting the camera/ cameraroll
         presentViewController(imagePicker, animated: true, completion: nil)
     }
     
@@ -35,6 +37,7 @@ class ListViewController : UITableViewController, UIImagePickerControllerDelegat
             let photo = info[UIImagePickerControllerOriginalImage] as! UIImage
             selectedItem.photo = photo
             myManager.save()
+            // completion block is any code we want to happen before we end function, we don't know when but in the most optimized time
             dismissViewControllerAnimated(true, completion: { () -> Void in
                 // we use self in here explicitely and not in other cases because we are in a block of the class
                 self.tableView.reloadRowsAtIndexPaths([indexPath], withRowAnimation: .Automatic)

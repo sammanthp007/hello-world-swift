@@ -31,7 +31,7 @@ class ScavengerHuntItem: NSObject, NSCoding {
         }
     }
     
-//  decoder. Why do we need required
+//  decoder. It is required because in case we need to subclass this class, we need the right way to initialize it; swift has it optional
     required init?(coder aDecoder: NSCoder) {
         // decode and force cast the return as a string
         name = aDecoder.decodeObjectForKey(nameKey) as! String

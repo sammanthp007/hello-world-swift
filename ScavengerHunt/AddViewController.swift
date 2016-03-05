@@ -39,7 +39,9 @@ class AddViewController: UIViewController {
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if segue.identifier == "DoneItem" {
             if let name = textField.text {
-                newItem = ScavengerHuntItem(name: name)
+                if !name.isEmpty{
+                    newItem = ScavengerHuntItem(name: name)
+                }
             }
         }
     }
